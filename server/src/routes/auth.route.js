@@ -1,11 +1,8 @@
 import express from "express";
+import { signup } from "../controllers/auth.controller.js"
 
 const router = express.Router()
 
-router.get("/signup", (req, res) => {
-    res.status(200).json({
-        message: "Sab changa si in signup"
-    })
-})
+router.post("/signup", signup)
 
 export default router

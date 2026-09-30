@@ -9,7 +9,7 @@ const isValidEmail = (email) => {
 
 const isValidPassword = (password) => {
     return (
-        typeof password === "string" && password.length >= 8 && password.length <= 18
+        typeof password === "string" && password.length >= 8 && password.length <= 128
     )
 }
 

@@ -20,7 +20,7 @@ import mongoose from "mongoose"
             type: String,
             required: true,
             minlength: 3,
-            maxlength: 18
+            maxlength: 128
         },
     },
     {
